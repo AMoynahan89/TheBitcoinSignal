@@ -3,6 +3,66 @@
   <div class="intro-wrapper">
     <h1>The Bitcoin Signal</h1>
     <h5>Coming Soon</h5>
+    <div class="social-wrapper">
+      <p>Follow me on <a href="https://x.com/FreeRangeBTC" target="_blank" rel="noopener">X</a> for updates on our progress!</p>
+    </div>
+    <!-- Lightning Donation Section -->
+    <div class="donation-wrapper">
+      <h3>Support The Bitcoin Signal</h3>
+      <p>Donate via Lightning to help make this magazine a reality!</p>
+      <p><strong>Lightning Address:</strong> <a href="lightning:freerangesats@strike.me" class="lightning-address">freerangesats@strike.me</a></p>
+      <!-- QR Code for Lightning Address -->
+      <div class="qr-code">
+        <img src="images\uploads\lightningaddress.jpeg" width="150">
+      </div>
+    </div>
   </div>
 </section>
+
+<style>
+  .donation-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .donation-wrapper h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+  }
+
+  .donation-wrapper p {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+
+  .lightning-address {
+    color: #f7931a;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1.1em;
+  }
+
+  .lightning-address:hover {
+    text-decoration: underline;
+  }
+
+  .qr-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .qr-code img {
+
+    border: 2px solid #f7931a;
+    padding: 5px;
+    background-color: #fff;
+  }
+</style>
 {{ end }}
