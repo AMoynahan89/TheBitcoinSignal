@@ -1,3 +1,7 @@
+body {
+  background: #1c1c1c;
+}
+
 #index-hero-section {
   padding: 25px 0;
 }
@@ -22,4 +26,52 @@
   justify-content: center;
   text-align: center;
   padding: 12px;
+}
+
+.social-wrapper a {
+  color: #f7931a;
+}
+
+.donation-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.donation-wrapper h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+}
+
+.donation-wrapper p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.lightning-address {
+  color: #f7931a;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 1.1em;
+}
+
+.lightning-address:hover {
+  text-decoration: underline;
+}
+
+.qr-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.qr-code img {
+  border: 2px solid #f7931a;
+  padding: 5px;
+  background-color: #fff;
 }/*# sourceMappingURL=home.css.map */
