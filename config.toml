@@ -1,4 +1,4 @@
-baseURL = "http://thebitcoinsignal.netlify.app/"
+baseURL = "http://bitcoinsignal.net/"
 environment = "prod"
 languageCode = "en-us"
 
