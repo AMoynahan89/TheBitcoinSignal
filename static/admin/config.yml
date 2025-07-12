@@ -48,7 +48,6 @@ collections:
     - {label: SEOImage, name: seoimage, widget: image, required: false}
     - {label: Image, name: image, widget: image, required: false}
     - {label: Alt, name: alt, widget: string, required: false}
-    - {label: "Volume Number", name: "VolumeNumber", widget: number}
     - {label: Priority, name: priority, widget: string,  default: '0.5'}
     - {label: Private, name: private, widget: boolean,  default: false}
     - {label: "Publish Date", name: "date", widget: "datetime"}
