@@ -25,9 +25,9 @@ collections:
     - {label: Description, name: description, widget: string}
     - {label: Slug, name: slug, widget: string}
     - {label: "Volume", name: "volume", widget: number}
-    - {label: SEOImage, name: seoimage, widget: image}
-    - {label: Image, name: image, widget: image}
-    - {label: Alt, name: alt, widget: string}
+    - {label: SEOImage, name: seoimage, widget: image, required: false}
+    - {label: Image, name: image, widget: image, required: false}
+    - {label: Alt, name: alt, widget: string, required: false}
     - {label: Private, name: private, widget: boolean,  default: false}
     - {label: "Type", name: "type", widget: string,  default: 'issues'}
     - {label: Priority, name: priority, widget: string,  default: '0.8'}
@@ -45,9 +45,9 @@ collections:
     - {label: Description, name: description, widget: string}
     - {label: Slug, name: slug, widget: string}
     - {label: "Issues", name: "issuesPages", widget: "relation", collection: "issuesPages", search_fields: ["title"], value_field: "title", display_fields: ["title"], multiple: true, required: false}
-    - {label: SEOImage, name: seoimage, widget: image}
-    - {label: Image, name: image, widget: image}
-    - {label: Alt, name: alt, widget: string}
+    - {label: SEOImage, name: seoimage, widget: image, required: false}
+    - {label: Image, name: image, widget: image, required: false}
+    - {label: Alt, name: alt, widget: string, required: false}
     - {label: "Volume Number", name: "VolumeNumber", widget: number}
     - {label: Priority, name: priority, widget: string,  default: '0.5'}
     - {label: Private, name: private, widget: boolean,  default: false}
