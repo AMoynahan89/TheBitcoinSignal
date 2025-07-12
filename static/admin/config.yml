@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: CaliforniaHodl/TheBitcoinSignal
+  repo: AMoynahan89/TheBitcoinSignal
 
   branch: master # Branch to update (optional; defaults to master)
 
@@ -44,6 +44,7 @@ collections:
     - {label: "PageTitle", name: "PageTitle", widget: "string", required: false}
     - {label: Description, name: description, widget: string}
     - {label: Slug, name: slug, widget: string}
+    - {label: "Issues", name: "issuesPages", widget: "relation", collection: "issuesPages", search_fields: ["title"], value_field: "title", display_fields: ["title"], multiple: true, required: false}
     - {label: SEOImage, name: seoimage, widget: image}
     - {label: Image, name: image, widget: image}
     - {label: Alt, name: alt, widget: string}
@@ -53,7 +54,7 @@ collections:
     - {label: "Publish Date", name: "date", widget: "datetime"}
     - {label: "Type", name: "type", widget: string,  default: 'articles'}
     - {label: 'JavaScript', name: 'js', widget: 'list',  default: ['blog.js']}
-    - {label: 'CSS', name: 'css', widget: 'list', default: ['issues.css']}
+    - {label: 'CSS', name: 'css', widget: 'list', default: ['articles.css']}
     - {label: "Body", name: "body", widget: "markdown"}
 
 

@@ -6,12 +6,12 @@
     <div class="social-wrapper">
       <p>Follow me on <a href="https://x.com/FreeRangeBTC" target="_blank" rel="noopener">X</a> for updates on our progress!</p>
     </div>
-    <!-- Lightning Donation Section -->
+  
     <div class="donation-wrapper">
       <h3>Support The Bitcoin Signal</h3>
       <p>Donate via Lightning to help make this magazine a reality!</p>
       <p><strong>Lightning Address:</strong> <a href="lightning:freerangesats@strike.me" class="lightning-address">freerangesats@strike.me</a></p>
-      <!-- QR Code for Lightning Address -->
+
       <div class="qr-code">
         <img src="images\uploads\lightningaddress.jpeg" width="150">
       </div>
@@ -19,4 +19,43 @@
   </div>
 </section>
 
+<!-- 
+<section id="index-random-article-section">
+  <div class="site-container-1340">
+    <div class="row text-center">
+      <div class="col-12 ">
+        <h3>Check out more articles</h3>
+      </div>
+    </div>
+
+
+
+
+    <div class="row justify-content-between gap-4">
+    {{ $events := where .Site.RegularPages "Type" "articles" }}
+    {{ $firstThree := first 3 $events }}
+    {{ range $event := $firstThree }}
+    {{ $event := . }}
+
+    <div class="col-12 col-lg">
+      <div class="article-card">
+        <a href="{{ $event.Permalink }}">
+          <div class="image">
+            <img src="{{$event.Params.image }}" alt="{{$event.Params.alt }}" class="w-100">
+          </div>
+          <div class="content">
+            <p class="small">{{$event.Params.date | time.Format "June, 2, 2006" }}</p>
+            <h4 class="title">{{$event.Params.title }}</h4>
+            <p>{{$event.Params.description }}</p>
+          </div>
+          <span class="sr-only"> link to the next great article</span>
+        </a>
+      </div>
+    </div>
+
+
+    {{ end }}
+    </div>
+  </div>
+</section> -->
 {{ end }}
