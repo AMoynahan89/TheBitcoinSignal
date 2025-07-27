@@ -12,37 +12,27 @@ js:
 css:
   - articles.css
 ---
-// Outline for Improvement (Aiming for ~600 Words)1. 
-
-
-
-//Introduction (100 words)  Keep: The current opening about signal vs. noise is strong.  
-
-// Add: Briefly explain why Bitcoin’s culture is critical (e.g., it drives adoption, shapes development, and protects decentralization).  
-
-// Clarify: Emphasize that Bitcoin’s lack of central authority makes every user a potential culture-shaper.  
-
-// Example Addition: Mention a historical example (e.g., the block size wars) to show how culture has shaped Bitcoin before.
-
-
-
 Run Your Culture Node: Be the Signal, Not the Noise. 
 
-In the endless sea of noise—every frequency you’re not looking for—there’s a signal. That signal is the Bitcoin culture you’re trying to tune into, the one you believe 
+In the endless sea of noise there’s a signal. That signal is the essence or culture of you’re trying to tune into, the one you believe best represents
 
-Bitcoin should be. It’s not some universal truth handed down by devs or vc backed crypto firms. Bitcoin’s permissionless, decentralized nature means no one gets to define it for you. Not Core, not Knots, not some 
+Bitcoin. Everything else is noise. It’s not some universal truth handed down by devs or vc backed crypto firms. Bitcoin’s permissionless, decentralized nature means no one gets to define it for you. Not Core, not Knots, not some 
 
-suitcoiner making the podcast rounds shilling his paper bitcoin. The real question isn’t “What is Bitcoin?”—it’s “What is Bitcoin for you?” The only way to answer that is to fire up your own node and broadcast your 
+suitcoiner making the podcast rounds shilling his paper bitcoin. The real question isn’t “What is Bitcoin?”—it’s “What is Bitcoin for you?” The only way to answer that is to run your own node and broadcast your 
 
-definition to the world. // This is just as important as runnnig a full archival node, if not more so. Lets not forget previous battles in bitcoin like the block size wars. Both sides had technically valid points but
+definition of bitcoin to the world. Just as important as runnnig a full archival node, if not more so, is firing up your 'cultrue node' and letting other bitcoiners know what you think and why. Lets not forget previous 
 
-the deciding factor was the general attitude of bitcoiners. The dominant culture at the time was more conservative and prioritized keeping the blockchain small and making sure it was easy to run a full node.
+battles in bitcoin like the block size wars. Both sides had technically valid points but the deciding factor was the general attitude of bitcoiners. The dominant culture at the time was more conservative and 
 
-// If you’re already running a node, make sure it’s running Knots. Then, take it further: run a culture node. Here’s how.
+prioritized keeping the blockchain small and making sure it was easy to run a full node. This attitude influenced developers and plebs alike and ultimately led to the rejection of big blocks in favor of 
 
+maintaining node decentralization. Today, we are at a similar crossroads in bitcoins history. This may not be a fork of the chain but a social fork instead. This could have just as severe implications as an 
 
+actual chain fork except you won't be getting any airdrops. There are two paths we can take, either we continue making the block chain more permissive and refuse to fix bugs that people have found a way to exploit; 
 
+Or we own up to our mistakes, fix the bugs and reaffirm our priority to maintain bitcoin's monetary properties. It is time for bitcoiners to decide which road we go down. If you’re already running a node, 
 
+make sure it’s running Knots. Then, take it one step further: run a culture node. Here’s how.
 
 // 2. What Is a Culture Node? (150 words)  Keep: The metaphor of a culture node as both technical and social.  
 
@@ -54,15 +44,31 @@ the deciding factor was the general attitude of bitcoiners. The dominant culture
 
 // Example: Add a non-technical example, like a Bitcoin meetup group as a culture node.
 
-
-
 Culture Nodes: You Are the Network
 
-A culture node isn’t just an old pc that stores the entire history of the blockchain and validates transactions. It's more than that. It's also you—the node runner—who shapes the network.  A culture node 
+A culture node isn’t just an old pc that stores the entire history of the blockchain and validates transactions. It's a record of your proof of work, it's you—the node runner—who shapes the network. A culture node 
 
-is how you live, breathe, and share your Bitcoin Signal. You decide what software to run, but also what ideas to amplify, what principles to stand for. You define the social consensus rules and relay policy. It’s about 
+is how you live, breathe, and share your vision of the world. You decide what software to run, but also what ideas to amplify, what principles to stand for, and what battles are worth fighting. YOU decide what
 
-relaying the ideas that resonate with you and filtering out the ones that seem harmful to the network. No dev, no influencer, no venture capitalist can force you to pass along
+bitcoin is. You define the social consensus rules and relay policy. Every node runner gets to have a say in which direction the network goes, what changes are made and ultimately who is in control of bitcoin. Yes, i know, 
+
+'but bitcoin is decentralized bro, nobody owns it.' We all know that's not true. When a single bitcoin client has a 97% of users running their software, and building their businesses on it, you effectively own bitcoin. 
+
+The bitcoin core devs will even say it. @darious said in a recent podcast, "Bitcoin core IS bitcoin." That is not an exageration and should be setting off alarm bells in every bitcoiners haed.
+
+It has been incouraging to see knots pecentage of reachable nodes continue to climb ever since core devs proposed to raise op return's max data size from 83 bytes to 100000 bytes. They propose that this will encourage 
+
+people who put arbtrary data in transactions to put it in the op return section of a transaction rather than in more harmful places in a transaction. They are knot going to prevent people from 'inscribing' data 
+
+in more harmful ways, they will just allow that to continue to happen.
+
+The alternative is to run bitcoin knots. Knots is just another bitcoin client maintained by one of bitcoins OG devs, Luke Dash Jr. It's mostly just a copy of bitcoin core with aditional filters and configurability operations
+
+for the node runner.  
+
+// whats knots, why knots, technicals of knots
+
+  relaying the ideas that resonate with you and filtering out the ones that seem harmful to the network. No dev, no influencer, no venture capitalist can force you to pass along
 
 ideas that don’t align with your vision. The culture backed by the most nodes becomes Bitcoin’s dominant signal. You get to decide what that signal sounds like. Do what comes naturally. Post your thoughts on X or Nostr. 
 
@@ -72,10 +78,6 @@ to the network. BTC Prague is a culture node, rallying Bitcoiners with events an
 
 you stack sats is a way to take part in the social consensus. But nodes don’t just broadcast—they also listen. Tune into other signals, amplify what’s good, and filter out the noise.
 
-
-
-
-
 // 3. Why Culture Nodes Matter: The Spam Wars (100 words)  Keep: The spam wars context and the Core vs. Knots debate.  
 
 // Add: Explain how spam (e.g., Ordinals) affects Bitcoin’s long-term viability (e.g., higher fees, slower adoption).  
@@ -83,8 +85,6 @@ you stack sats is a way to take part in the social consensus. But nodes don’t 
 // Clarify: Emphasize that users, not devs, define Bitcoin’s priorities through their nodes and voices.  
 
 // Broaden: Mention other cultural battles (e.g., privacy vs. regulation) to show the stakes beyond spam.
-
-
 
 The Spam Wars: Why Culture Nodes Matter
 
@@ -98,10 +98,6 @@ Running a node—especially a mining node making its own block templates—is ho
 
 launch is a vote for the Bitcoin you want to see.
 
-
-
-
-
 // 4. How to Run Your Culture Node (150 words)  Keep: The list of actions (tweeting, coding, events).  
 
 // Add: More inclusive options for non-technical readers (e.g., sharing Bitcoin basics with friends, curating content on X).  
@@ -111,8 +107,6 @@ launch is a vote for the Bitcoin you want to see.
 // Specificity: Suggest one immediate action (e.g., “Join a Nostr relay today” or “Share a Bitcoin meme on X”).  
 
 // Counterargument: Address “Why bother?” by explaining how small actions compound to strengthen Bitcoin’s network.
-
-
 
 How to Run Your Culture Node
 
@@ -128,10 +122,6 @@ If you’re running a Bitcoin node, make it Knots. Talk to people. Tell your fri
 
 You decide what bitcoin is.
 
-
-
-
-
 // 5. Conclusion: Your Signal, Your Bitcoin (100 words)  Keep: The rallying cry to “fire up your culture node.”  
 
 // Add: Reinforce the long-term vision (e.g., a Bitcoin that outlives empires depends on today’s culture).  
@@ -140,15 +130,11 @@ You decide what bitcoin is.
 
 // Call to Action: Encourage readers to start small but act now (e.g., “Post your Bitcoin vision on X today”).
 
-
-
 Your Node, Your Signal
 
 Bitcoin’s culture isn’t shaped by some central authority—it’s shaped by us, the node runners, the culture nodes. Every time you share your vision, you’re broadcasting a signal. The more of us running culture nodes, the 
 
 stronger the signal gets. Drown out the noise. Define Bitcoin for yourself. Fire up your culture node today, and let’s make the Bitcoin we want to see—no permission required.
-
-
 
 
 
@@ -162,8 +148,6 @@ stronger the signal gets. Drown out the noise. Define Bitcoin for yourself. Fire
 
 // Word Count Management: Trim repetitive phrases (e.g., “define Bitcoin for yourself” appears multiple times) to make room for new content.
 
-
-
 // Final Notes
 
 // Your article is already a strong manifesto, but clarifying the culture node concept, broadening its appeal, and adding specific examples will make it more impactful. By expanding the sections as outlined, 
@@ -171,3 +155,7 @@ stronger the signal gets. Drown out the noise. Define Bitcoin for yourself. Fire
 // you’ll hit ~600 words while keeping the piece tight and inspiring. Focus on balancing technical and social elements to resonate with both hardcore node-runners and casual Bitcoin enthusiasts. Keep the fiery tone—it’s 
 
 // your signal, and it’s loud!
+
+Oh no. I would suggest you try mining with ocean. Then you can help decentralize template construction and have a nice ui that you can use to confirm that you are indeed connected. I think if you log into your miners operating system(put your miners ip address into a browser like http://192.168.x.y and navigate to pool settings you can see the fallback info. I think this is where you will mine if you just plugged it in. If you want to solo mine then you're all set.
+
+The user is your bitcoin address, I don't know if you want to use the default one, I preferred to enter one that I generated the keys to. The stratum info is what you can configure to mine with a pool. my host is a local ip address because I am running a datum gateway so the miner points to my node instead of a pool.
