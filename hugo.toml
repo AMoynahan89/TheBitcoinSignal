@@ -15,10 +15,10 @@ title = 'The Bitcoin Signal'
     name = "Articles"
     url = "/articles/"
     weight = 2
-  [[menu.main]]
-    name = "Issues"
-    url = "/issues/"
-    weight = 3
+  # [[menu.main]]
+  #   name = "Issues"
+  #   url = "/issues/"
+  #   weight = 3
   [[menu.main]]
     name = "About"
     url = "/about/"
