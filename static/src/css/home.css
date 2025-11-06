@@ -1,77 +1,80 @@
-body {
-  background: #1c1c1c;
+/* Hero Section */
+.hero-section {
+  padding: 80px 0 40px;
+  text-align: center;
 }
 
-#index-hero-section {
-  padding: 25px 0;
+.hero-section h1 {
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 16px;
 }
+
 @media (min-width: 768px) {
-  #index-hero-section {
-    padding: 50px 0;
+  .hero-section h1 {
+    font-size: 64px;
+    line-height: 72px;
   }
 }
 
-.intro-wrapper {
-  background: #1c1c1c;
-  color: white;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.hero-section p {
+  font-size: 20px;
+  color: var(--text-secondary);
+}
+
+/* Latest Articles Section */
+.latest-articles {
+  padding: 40px 0;
+}
+
+.latest-articles h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+/* Support Section */
+.support-section {
+  padding: 60px 0;
+  margin-top: 40px;
+}
+
+.support-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 40px;
   text-align: center;
-  padding: 12px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.social-wrapper a {
-  color: #f7931a;
+.support-card h3 {
+  font-size: 28px;
+  margin-bottom: 12px;
 }
 
-.donation-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
+.support-card p {
+  margin-bottom: 16px;
 }
 
-.donation-wrapper h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  text-align: center;
-  display: flex;
-}
-
-.donation-wrapper p {
-  font-size: 1em;
-  margin: 10px 0;
+.support-card .lightning-info {
+  margin-top: 24px;
 }
 
 .lightning-address {
-  color: #f7931a;
+  color: var(--bitcoin-orange);
   text-decoration: none;
-  font-family: monospace;
-  font-size: 1.1em;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: var(--bg-secondary);
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
 }
 
 .lightning-address:hover {
+  background-color: var(--hover-bg);
   text-decoration: underline;
-}
-
-.qr-code {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-}
-
-.qr-code img {
-  border: 2px solid #f7931a;
-  padding: 5px;
-  background-color: #fff;
 }/*# sourceMappingURL=home.css.map */

@@ -1,4 +1,34 @@
 {{ define "main" }}
-all issues
-    {{ .Content}}
+<section class="page-header">
+  <div class="site-container-1340">
+    <h1>Issues</h1>
+    <p>Curated collections of our best Bitcoin content</p>
+  </div>
+</section>
+
+<section class="issues-section">
+  <div class="site-container-1340">
+    {{ $issues := where .Site.RegularPages "Type" "issues" }}
+    {{ if $issues }}
+    <div class="articles-grid">
+      {{ range $issues }}
+      <a href="{{ .Permalink }}" class="article-card">
+        {{ if .Params.image }}
+        <div class="image">
+          <img src="{{ .Params.image }}" alt="{{ .Params.alt | default .Title }}" loading="lazy">
+        </div>
+        {{ end }}
+        <div class="content">
+          <p class="small">Volume {{ .Params.volume | default "1" }}</p>
+          <h3 class="title">{{ .Title }}</h3>
+          <p>{{ .Params.description }}</p>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    {{ else }}
+    <p style="text-align: center; padding: 60px 0;">No issues yet. Check back soon!</p>
+    {{ end }}
+  </div>
+</section>
 {{ end }}

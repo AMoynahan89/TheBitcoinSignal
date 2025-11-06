@@ -1,1 +1,19 @@
-<h1>Header</h1>
+<header class="site-header">
+  <div class="site-container-1340">
+    <nav class="main-nav">
+      <div class="logo">
+        <a href="/">The Bitcoin Signal</a>
+      </div>
+      <ul class="nav-menu">
+        {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+</header>

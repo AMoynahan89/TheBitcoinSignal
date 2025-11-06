@@ -1,4 +1,27 @@
 {{ define "main" }}
-single
-  {{ .Content }}
+<article class="article-single">
+  <div class="site-container-1340">
+    <div class="article-header">
+      <p class="article-meta">{{ .Date.Format "January 2, 2006" }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ if .Params.description }}
+      <p class="article-description">{{ .Params.description }}</p>
+      {{ end }}
+    </div>
+
+    {{ if .Params.image }}
+    <div class="article-featured-image">
+      <img src="{{ .Params.image }}" alt="{{ .Params.alt | default .Title }}">
+    </div>
+    {{ end }}
+
+    <div class="article-content">
+      {{ .Content }}
+    </div>
+
+    <div class="article-footer">
+      <a href="/articles/" class="back-link">← Back to Articles</a>
+    </div>
+  </div>
+</article>
 {{ end }}

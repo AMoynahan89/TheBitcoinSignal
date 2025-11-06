@@ -1,4 +1,34 @@
 {{ define "main" }}
-    all articles    
-    {{ .Content}}
+<section class="page-header">
+  <div class="site-container-1340">
+    <h1>Articles</h1>
+    <p>In-depth analysis and commentary on Bitcoin</p>
+  </div>
+</section>
+
+<section class="articles-section">
+  <div class="site-container-1340">
+    {{ $articles := where .Site.RegularPages "Type" "articles" }}
+    {{ if $articles }}
+    <div class="articles-grid">
+      {{ range $articles }}
+      <a href="{{ .Permalink }}" class="article-card">
+        {{ if .Params.image }}
+        <div class="image">
+          <img src="{{ .Params.image }}" alt="{{ .Params.alt | default .Title }}" loading="lazy">
+        </div>
+        {{ end }}
+        <div class="content">
+          <p class="small">{{ .Date.Format "January 2, 2006" }}</p>
+          <h3 class="title">{{ .Title }}</h3>
+          <p>{{ .Params.description }}</p>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    {{ else }}
+    <p style="text-align: center; padding: 60px 0;">No articles yet. Check back soon!</p>
+    {{ end }}
+  </div>
+</section>
 {{ end }}

@@ -1,4 +1,26 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://thebitcoinsignal.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'The Bitcoin Signal'
+
+[params]
+  description = 'A Bitcoin magazine delivering signal over noise'
+  author = 'The Bitcoin Signal'
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Articles"
+    url = "/articles/"
+    weight = 2
+  [[menu.main]]
+    name = "Issues"
+    url = "/issues/"
+    weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
 

@@ -1,61 +1,51 @@
 {{ define "main" }}
-<section id="index-hero-section">
-  <div class="intro-wrapper">
-    <h1>The Bitcoin Signal</h1>
-    <h5>Coming Soon</h5>
-    <div class="social-wrapper">
-      <p>Follow me on <a href="https://x.com/FreeRangeBTC" target="_blank" rel="noopener">X</a> for updates on our progress!</p>
-    </div>
-  
-    <div class="donation-wrapper">
-      <h3>Support The Bitcoin Signal</h3>
-      <p>Donate via Lightning to help make this magazine a reality!</p>
-      <p><strong>Lightning Address:</strong> <a href="lightning:freerangesats@strike.me" class="lightning-address">freerangesats@strike.me</a></p>
-
-      <div class="qr-code">
-        <img src="images\uploads\lightningaddress.jpeg" width="150">
-      </div>
+<section class="hero-section">
+  <div class="site-container-1340">
+    <div class="section-header">
+      <h1>The Bitcoin Signal</h1>
+      <p>Delivering signal over noise in the world of Bitcoin</p>
     </div>
   </div>
 </section>
 
-<!-- 
-<section id="index-random-article-section">
+<section class="latest-articles">
   <div class="site-container-1340">
-    <div class="row text-center">
-      <div class="col-12 ">
-        <h3>Check out more articles</h3>
-      </div>
+    <h2>Latest Articles</h2>
+
+    {{ $articles := where .Site.RegularPages "Type" "articles" }}
+    {{ if $articles }}
+    <div class="articles-grid">
+      {{ range first 6 $articles }}
+      <a href="{{ .Permalink }}" class="article-card">
+        {{ if .Params.image }}
+        <div class="image">
+          <img src="{{ .Params.image }}" alt="{{ .Params.alt | default .Title }}" loading="lazy">
+        </div>
+        {{ end }}
+        <div class="content">
+          <p class="small">{{ .Date.Format "January 2, 2006" }}</p>
+          <h3 class="title">{{ .Title }}</h3>
+          <p>{{ .Params.description }}</p>
+        </div>
+      </a>
+      {{ end }}
     </div>
-
-
-
-
-    <div class="row justify-content-between gap-4">
-    {{ $events := where .Site.RegularPages "Type" "articles" }}
-    {{ $firstThree := first 3 $events }}
-    {{ range $event := $firstThree }}
-    {{ $event := . }}
-
-    <div class="col-12 col-lg">
-      <div class="article-card">
-        <a href="{{ $event.Permalink }}">
-          <div class="image">
-            <img src="{{$event.Params.image }}" alt="{{$event.Params.alt }}" class="w-100">
-          </div>
-          <div class="content">
-            <p class="small">{{$event.Params.date | time.Format "June, 2, 2006" }}</p>
-            <h4 class="title">{{$event.Params.title }}</h4>
-            <p>{{$event.Params.description }}</p>
-          </div>
-          <span class="sr-only"> link to the next great article</span>
-        </a>
-      </div>
-    </div>
-
-
+    {{ else }}
+    <p style="text-align: center; padding: 60px 0;">No articles yet. Check back soon!</p>
     {{ end }}
+  </div>
+</section>
+
+<section class="support-section">
+  <div class="site-container-1340">
+    <div class="support-card">
+      <h3>Support The Bitcoin Signal</h3>
+      <p>Help us continue delivering quality Bitcoin content</p>
+      <p class="lightning-info">
+        <strong>Lightning Address:</strong>
+        <a href="lightning:freerangesats@strike.me" class="lightning-address">freerangesats@strike.me</a>
+      </p>
     </div>
   </div>
-</section> -->
+</section>
 {{ end }}
