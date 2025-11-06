@@ -27,9 +27,11 @@
   padding: 40px 0;
 }
 
-.latest-articles h2 {
+.latest-articles h2,
+.latest-articles .site-container-1340 > h2 {
   font-size: 32px;
   margin-bottom: 32px;
+  text-align: center !important;
 }
 
 /* Support Section */

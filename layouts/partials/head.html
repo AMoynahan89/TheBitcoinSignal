@@ -13,6 +13,24 @@
 <!-- metatags -->
 {{ partial "seo_schema" . }}
 
+<!-- Open Graph / Social Media Meta Tags -->
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:title" content="{{ if .Params.PageTitle }}{{ .Params.PageTitle }}{{ else if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
+<meta property="og:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ if .Params.seoimage }}{{ .Params.seoimage | absURL }}{{ else }}{{ "/images/bitcoinsignal.jpg" | absURL }}{{ end }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@BitcoinMonk21">
+<meta name="twitter:creator" content="@BitcoinMonk21">
+<meta name="twitter:title" content="{{ if .Params.PageTitle }}{{ .Params.PageTitle }}{{ else if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
+<meta name="twitter:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="twitter:image" content="{{ if .Params.seoimage }}{{ .Params.seoimage | absURL }}{{ else }}{{ "/images/bitcoinsignal.jpg" | absURL }}{{ end }}">
+
 <!-- link -->
 <link rel="apple-touch-icon" href="{{ "applehug-touch-icon.png" | relURL }}" sizes="180x180">
 <link rel="icon" href="{{ "favicon-32x32.png" | relURL }} " sizes="32x32" type="image/png">

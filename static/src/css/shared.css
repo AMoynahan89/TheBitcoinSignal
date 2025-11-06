@@ -132,6 +132,32 @@ a:hover {
   }
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.twitter-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--text-primary);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.twitter-link:hover {
+  color: var(--bitcoin-orange);
+  transform: translateY(-2px);
+}
+
+.twitter-link svg {
+  width: 20px;
+  height: 20px;
+}
+
 .mobile-menu-toggle {
   display: block;
   background: none;
@@ -255,21 +281,29 @@ main {
 
 /* Article Grid Styles */
 .articles-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 32px;
   margin-top: 40px;
+  justify-content: center;
+}
+
+/* Card sizing - always constrained */
+.article-card {
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px;
 }
 
 @media (min-width: 768px) {
-  .articles-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .article-card {
+    flex: 0 1 400px;
   }
 }
 
 @media (min-width: 1024px) {
-  .articles-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .article-card {
+    flex: 0 1 380px;
   }
 }
 
@@ -374,6 +408,21 @@ main {
 .articles-section,
 .issues-section {
   padding: 60px 0;
+}
+
+.latest-articles .articles-grid,
+.articles-section .articles-grid,
+.issues-section .articles-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.latest-articles h2,
+.articles-section h2,
+.issues-section h2 {
+  text-align: center !important;
 }
 
 /* Article Single Page */

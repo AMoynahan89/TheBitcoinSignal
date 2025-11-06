@@ -1,13 +1,10 @@
 
-
 {{ define "main" }}
-  <section>
-    <div class="site-container-1340">
-      <div class="row">
-        <div class="col-12">
-          <h1>Hello about page</h1>
-        </div>
-      </div>
+<section class="about-page">
+  <div class="site-container-1340">
+    <div class="about-content">
+      {{ .Content }}
     </div>
-  </section>
+  </div>
+</section>
 {{ end }}
