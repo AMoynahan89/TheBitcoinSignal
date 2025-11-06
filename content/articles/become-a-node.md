@@ -4,7 +4,7 @@ PageTitle: "Run Your Culture Node | Bitcoin Signal"
 description: "Just as important as running a full node is firing up your culture node—broadcasting your vision of what Bitcoin should be. Learn how to become the signal in Bitcoin's social layer."
 slug: run-your-culture-node
 priority: "0.8"
-private: false
+private: true
 date: 2025-11-05T12:00:00-07:00
 type: articles
 js:
