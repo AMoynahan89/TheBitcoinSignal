@@ -1,0 +1,427 @@
+/* Bitcoin Signal Admin Panel - Custom Styles */
+/* Matches the front-end Citadel21-inspired dark theme */
+
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #1a1a1a;
+  --bg-card: #141414;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --bitcoin-orange: #f7931a;
+  --border-color: #2a2a2a;
+  --hover-bg: #1f1f1f;
+}
+
+/* Override Decap CMS default styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Top bar / Header */
+[class*="AppHeader"] {
+  background-color: var(--bg-primary) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+[class*="AppHeader"] h1,
+[class*="AppHeader"] a,
+[class*="AppHeader"] button {
+  color: var(--text-primary) !important;
+}
+
+[class*="AppHeader"] a:hover,
+[class*="AppHeader"] button:hover {
+  color: var(--bitcoin-orange) !important;
+}
+
+/* Sidebar */
+[class*="Sidebar"],
+[class*="SidebarContainer"] {
+  background-color: var(--bg-secondary) !important;
+  border-right: 1px solid var(--border-color) !important;
+}
+
+[class*="SidebarLink"],
+[class*="NavLink"] {
+  color: var(--text-secondary) !important;
+  transition: color 0.2s ease, background-color 0.2s ease !important;
+}
+
+[class*="SidebarLink"]:hover,
+[class*="NavLink"]:hover {
+  color: var(--bitcoin-orange) !important;
+  background-color: var(--hover-bg) !important;
+}
+
+[class*="SidebarLink"][class*="active"],
+[class*="NavLink"][class*="active"] {
+  color: var(--bitcoin-orange) !important;
+  background-color: var(--hover-bg) !important;
+}
+
+/* Main content area */
+[class*="MainContent"],
+[class*="EntryEditor"],
+[class*="CollectionView"] {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Cards */
+[class*="Card"],
+[class*="EntryCard"],
+[class*="CollectionCard"] {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  transition: transform 0.2s ease, border-color 0.2s ease !important;
+}
+
+[class*="Card"]:hover,
+[class*="EntryCard"]:hover,
+[class*="CollectionCard"]:hover {
+  transform: translateY(-4px) !important;
+  border-color: var(--bitcoin-orange) !important;
+}
+
+/* Buttons */
+button,
+[class*="Button"],
+[type="button"],
+[type="submit"] {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+button:hover,
+[class*="Button"]:hover,
+[type="button"]:hover,
+[type="submit"]:hover {
+  background-color: var(--hover-bg) !important;
+  border-color: var(--bitcoin-orange) !important;
+  color: var(--bitcoin-orange) !important;
+}
+
+/* Primary/Action buttons */
+button[class*="primary"],
+[class*="Button"][class*="primary"],
+[class*="ActionButton"] {
+  background-color: var(--bitcoin-orange) !important;
+  color: var(--bg-primary) !important;
+  border: none !important;
+}
+
+button[class*="primary"]:hover,
+[class*="Button"][class*="primary"]:hover,
+[class*="ActionButton"]:hover {
+  background-color: #ff9d32 !important;
+  color: var(--bg-primary) !important;
+}
+
+/* Input fields */
+input,
+textarea,
+select,
+[class*="Input"],
+[class*="TextField"] {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+[class*="Input"]:focus,
+[class*="TextField"]:focus {
+  border-color: var(--bitcoin-orange) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(247, 147, 26, 0.2) !important;
+}
+
+/* Markdown editor */
+[class*="MarkdownControl"],
+[class*="RichTextEditor"],
+.CodeMirror {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+}
+
+.CodeMirror-gutters {
+  background-color: var(--bg-card) !important;
+  border-right: 1px solid var(--border-color) !important;
+}
+
+.CodeMirror-linenumber {
+  color: var(--text-secondary) !important;
+}
+
+.CodeMirror-cursor {
+  border-left: 1px solid var(--bitcoin-orange) !important;
+}
+
+/* Toolbar */
+[class*="Toolbar"],
+[class*="EditorToolbar"] {
+  background-color: var(--bg-card) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+[class*="Toolbar"] button,
+[class*="EditorToolbar"] button {
+  color: var(--text-secondary) !important;
+}
+
+[class*="Toolbar"] button:hover,
+[class*="EditorToolbar"] button:hover {
+  color: var(--bitcoin-orange) !important;
+  background-color: var(--hover-bg) !important;
+}
+
+/* Dropdowns and modals */
+[class*="Dropdown"],
+[class*="Modal"],
+[class*="Dialog"] {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  color: var(--text-primary) !important;
+}
+
+[class*="DropdownItem"]:hover,
+[class*="MenuItem"]:hover {
+  background-color: var(--hover-bg) !important;
+  color: var(--bitcoin-orange) !important;
+}
+
+/* Lists */
+[class*="ListCard"],
+[class*="EntryListing"] {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Headers and titles */
+h1, h2, h3, h4, h5, h6,
+[class*="Heading"] {
+  color: var(--text-primary) !important;
+}
+
+/* Text and labels */
+p, span, label,
+[class*="Label"],
+[class*="Text"] {
+  color: var(--text-primary) !important;
+}
+
+small,
+[class*="HelpText"],
+[class*="FieldHint"] {
+  color: var(--text-secondary) !important;
+}
+
+/* Links */
+a {
+  color: var(--bitcoin-orange) !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+}
+
+a:hover {
+  color: #ff9d32 !important;
+}
+
+/* Widget controls */
+[class*="ControlContainer"],
+[class*="FieldWrapper"] {
+  margin-bottom: 24px !important;
+}
+
+/* Image preview */
+[class*="ImagePreview"],
+[class*="MediaPreview"] {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+}
+
+/* Loading states */
+[class*="Loader"],
+[class*="Spinner"] {
+  border-color: var(--border-color) !important;
+  border-top-color: var(--bitcoin-orange) !important;
+}
+
+/* Status indicators */
+[class*="Published"],
+[class*="StatusSuccess"] {
+  background-color: rgba(34, 197, 94, 0.2) !important;
+  color: #4ade80 !important;
+}
+
+[class*="Draft"],
+[class*="StatusPending"] {
+  background-color: rgba(247, 147, 26, 0.2) !important;
+  color: var(--bitcoin-orange) !important;
+}
+
+/* Collection grid */
+[class*="CollectionGrid"] {
+  gap: 32px !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bitcoin-orange);
+}
+
+/* Workflow board */
+[class*="WorkflowCard"],
+[class*="BoardColumn"] {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+}
+
+[class*="BoardColumn"] {
+  background-color: var(--bg-secondary) !important;
+}
+
+/* Search bar */
+[class*="SearchInput"],
+input[type="search"] {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+}
+
+/* Notifications/Toasts */
+[class*="Toast"],
+[class*="Notification"] {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  color: var(--text-primary) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Preview pane */
+[class*="PreviewPane"],
+[class*="PreviewContainer"] {
+  background-color: var(--bg-primary) !important;
+  border-left: 1px solid var(--border-color) !important;
+}
+
+/* Tables */
+table {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+
+th {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+td {
+  color: var(--text-primary) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+tr:hover {
+  background-color: var(--hover-bg) !important;
+}
+
+/* Tags */
+[class*="Tag"],
+[class*="Badge"] {
+  background-color: var(--bg-secondary) !important;
+  color: var(--bitcoin-orange) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 4px !important;
+}
+
+/* Checkbox and radio */
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--bitcoin-orange) !important;
+}
+
+/* Dividers */
+hr,
+[class*="Divider"] {
+  border-color: var(--border-color) !important;
+}
+
+/* Code blocks in preview */
+code {
+  background-color: var(--bg-secondary) !important;
+  color: var(--bitcoin-orange) !important;
+  padding: 2px 8px !important;
+  border-radius: 4px !important;
+}
+
+pre {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+}
+
+/* File upload */
+[class*="FileUpload"],
+[class*="Dropzone"] {
+  background-color: var(--bg-secondary) !important;
+  border: 2px dashed var(--border-color) !important;
+  border-radius: 8px !important;
+  color: var(--text-secondary) !important;
+  transition: all 0.2s ease !important;
+}
+
+[class*="FileUpload"]:hover,
+[class*="Dropzone"]:hover {
+  border-color: var(--bitcoin-orange) !important;
+  background-color: var(--hover-bg) !important;
+}
+
+/* Login page */
+[class*="LoginContainer"],
+[class*="AuthForm"] {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+}
+
+/* Ensure proper contrast */
+* {
+  scrollbar-color: var(--border-color) var(--bg-secondary);
+}
