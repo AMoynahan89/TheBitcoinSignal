@@ -6,4 +6,5 @@ priority: 1.0
 cta: true
 js: ['home.js']
 css: [ 'home.css']
+seoimage: /images/bitcoinsignal.jpg
 ---
